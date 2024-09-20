@@ -60,11 +60,14 @@
             }
 
             p {
-                text-align: center;
+                text-align: left;
                 font-family: Roboto, Arial;
-                font-weight: 500;
+                font-weight: 400;
                 color: rgb(129, 201, 227);
-                margin: 0; 
+                margin: 0;
+                display: table;
+                max-width: 600px;
+                margin: 0 auto;
             }
 
             ol {
@@ -103,13 +106,21 @@
                 display: table;
             }
 
+            main img {
+                height: 300px;
+                display: table;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
             footer {
+                margin-top: 50px;
                 margin-bottom: 50px;
                 text-align: center;
             }
 
         </style>
-        <title>ITIS Course Page</title>
+        <title>Contract Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,8 +141,11 @@
             </nav>
         </header>
         <main>
-            <h2>Home</h2>
-            <p>Welcome to the home page for ITIS3135!</p>
+            <h2>Contract</h2>
+            <p> I, Adolfo Martinez agree to abide by the terms in my Fall 2024 ITIS-3135 052 Web App Design and Development with my instructor, D.I. Von Briesen.
+                I understand that all work that I do on my school and personal websites will be publicly available to the world. I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.
+                Signed: Adolfo Martinez, 13 September 2024 
+            </p>
         </main>
         <footer>
             <em>Become a MONSTER today!</em>
@@ -148,10 +162,11 @@
             <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
                 <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
             </a>
-            <script>
-                document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-            </script> 
+               <script>
+                    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                    document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+               </script> 
         </footer>
     </body>
 </html>
+

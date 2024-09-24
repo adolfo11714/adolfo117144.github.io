@@ -1,187 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <style>
-            body {
-                background-color: rgb(90, 27, 27);
-                margin: 0;
-            }
-
-            h1 {
-                text-align: center;
-                font-family: Roboto, Arial;
-                color: rgb(129, 201, 227);
-                margin: 0;
-                padding: 40px;
-            }
-
-            header nav ul{
-                margin: 0 auto;
-                font-family: Roboto, Arial;
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                font-size: 1rem;
-            }
-
-            li a {
-                text-decoration: none;
-                color: white;
-                cursor: pointer;
-                padding: 5px;
-                border-radius: 8px;
-                transition: background-color 0.3s;
-            }
-
-            h5 a{
-                text-decoration: none;
-                color: rgb(129, 201, 227);
-                cursor: pointer;
-                border-radius: 8px;
-                transition: background-color 0.3s;
-            }
-
-            li a:hover {
-                background-color: white;
-                color: rgb(174, 63, 63);
-            }
-
-            h5 a:hover {
-                color: white;
-            }
-
-            h2 {
-                text-align: center;
-                font-family: Roboto, Arial;
-                color: rgb(129, 201, 227);
-                line-height: 100px;
-                margin: 0;
-            }
-
-            h3 {
-                text-align: left;
-                margin: 0 auto;
-                font-family: Roboto, Arial;
-                color: rgb(129, 201, 227);
-                line-height: 100px;
-            }
-
-            section {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-
-            span {
-                font-weight: bold;
-            }
-
-            p, main li {
-                font-family: Roboto, Arial;
-                color: rgb(129, 201, 227);
-                margin: 0 auto;
-                max-width: 900px;
-                list-style-type: none;
-                line-height: 1.5em;
-            }
-
-            ol {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                list-style: none;
-                font-family: Roboto, Arial;
-                font-size: 1rem;
-            }
-
-            h5 {
-                font-family: Roboto, Arial;
-                color: rgb(129, 201, 227);
-                font-weight: 300;
-                text-align: center;
-            }
-
-            footer img {
-                display: inline-block;
-                vertical-align: middle;
-                max-width: 200px;
-            }
-
-            footer em {
-                color: rgb(129, 201, 227);
-            }
-
-
-            main ul {
-                margin: 0 auto;
-                padding: 0;
-            }
-
-            footer {
-                margin-top: 50px;
-                margin-bottom: 50px;
-                text-align: center;
-            }
-
-        </style>
         <title>About Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="styles/default.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body> 
         <header>
-            <h1>Adolfo Martinez || Absolute Monster || ITIS3135 Course Page</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="introduction.html">Introduction</a></li>
-                    <li><a href="contract.html">Contract</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
+            <div data-include="components/header.html"></div>
         </header>
         <main>
-            <h2>About Us</h2>
-            <p>At <span>ABSOLUTE MONSTER</span> we are dedicated to giving you the upmost attention and resources to get you to your ideal body shape and health. With equipment that hits every body part, 
-               helpful team members, trainers, and from a variety of classes to join and choose from! We have it all here at the <span>ABSOLUTE MONSTER</span> gym! Become a <span>MONSTER</span> today by 
-               giving us a call or shooting us an email and we will get back to you!
-            </p>
             <section>
+                <h2>About Us</h2>
+                <p>At <span>ABSOLUTE MONSTER</span> we are dedicated to giving you the upmost attention and resources to get you to your ideal body shape and health. With equipment that hits every body part, 
+                helpful team members, trainers, and from a variety of classes to join and choose from! We have it all here at the <span>ABSOLUTE MONSTER</span> gym! Become a <span>MONSTER</span> today by 
+                giving us a call or shooting us an email and we will get back to you!
+                </p>
                 <h3>Membership prices</h3>
-                <ul>
-                    <li><span>MONSTER</span> : $19.99 - Gives you acccess to our facility and classes</li>
-                    <li><span>MONSTER+</span> : $24.99 - On top of basic you get access to a personal trainer that will suit your needs</li>
-                    <li><span>ABSOLUTE MONSTER</span> : $29.99 - You get all benefits from the other packages and get discounts to most athletic stores</li>
-                </ul>
-            </section>
-            <section>
+                    <ul>
+                        <li><span>MONSTER</span> : $19.99 - Gives you acccess to our facility and classes</li>
+                        <li><span>MONSTER+</span> : $24.99 - On top of basic you get access to a personal trainer that will suit your needs</li>
+                        <li><span>ABSOLUTE MONSTER</span> : $29.99 - You get all benefits from the other packages and get discounts to most athletic stores</li>
+                    </ul>
                 <h3>Our Mission for the Community</h3>
                 <p>"At <span>ABSOLUTE MONSTER</span>, we empower individuals to transform their bodies and lives through comprehensive fitness solutions, expert guidance, and a supportive community."</p>
             </section>
         </main>
         <footer>
-            <em>Become a MONSTER today!</em>
-            <ol>
-                <li><a href="https://webpages.charlotte.edu/amart268/" target="_blank">Charlotte Webpage</a></li>
-                <li><a href="https://github.com/adolfo117144" target="_blank">GitHub</a></li>
-                <li><a href="https://adolfo117144.github.io/" target="_blank">GitHub.io</a></li>
-                <li><a href="https://www.linkedin.com/in/adolfomartinez11714/" target="_blank">LinkedIn</a></li>
-            </ol>
-            <h5>Page designed by <a href="martinezinc.co/">Martinez inc.</a> &#169;2024, <em><a href="https://www.freecodecamp.org/certification/adolfo11714/responsive-web-design">Certified in Reponsive Web Design</a></em></h5>
-            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-            </a>
-            <script>
-                document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-            </script> 
+            <div data-include="components/footer.html"></div>
         </footer>
+        <script src="scripts/HTMLInclude.min.js"></script>
     </body>
 </html>
